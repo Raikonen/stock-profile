@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Stock Profile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section id="header-section">
+      <div class="header-container">
+        <span id="company-name"></span>
+        <span id="ticker-symbol-with-exchange">
+          <span id="ticker-symbol"></span><span id="exchange"></span>
+        </span>
+      </div>
+    </section>
+
+    <section id="financial-information-section">
+      <div class="section-container">
+        <h2>Financial Information</h2>
+        <div>
+          <div class="financial-metric">
+            <h4>Currency</h4>
+            <span id="currency"></span>
+          </div>
+          <div class="financial-metric">
+            <h4>52 Week High</h4>
+            <span id="year-high"></span>
+          </div>
+          <div class="financial-metric">
+            <h4>52 Week Low</h4>
+            <span id="year-low"></span>
+          </div>
+          <div class="financial-metric">
+            <h4>Market Capitalisation</h4>
+            <span id="market-capitalisation"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company-information-section">
+      <div class="section-container">
+        <h2 id="about-company-name">About</h2>
+        <hr style="margin: 10px 0" />
+        <h3>Company Information</h3>
+        <p id="company-information"></p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

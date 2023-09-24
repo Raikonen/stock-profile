@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --yellow: #ffd322;
+  --midYellow: #ffd321;
+  --dark: #313031;
+  --midDark: #404040;
+  --lightDark: #808080;
+  --lightGrey: #f5f5f5;
+  --extraLightGrey: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Epilogue", sans-serif;
+  margin: 0.5rem 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+.header-container {
+  margin: 40px 10% 20px;
+  min-width: 240px;
+  max-width: 1220px;
+  display: flex;
+}
+
+.section-container {
+  padding: 20px 40px;
+  margin: 20px 10%;
+  min-width: 240px;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 0 1px 16px 10px rgba(64, 64, 64, 0.08);
+}
+
+#financial-information-section .section-container > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  color: #404040;
+}
+
+.financial-metric > h4 {
+  font-weight: 400;
+}
+.financial-metric > span {
+  font-size: 20px;
+}
+
+#header-section #company-name {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#ticker-symbol,
+#exchange {
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .section-container {
+    border-radius: 0px;
+    box-shadow: none;
+    border-top: 1px solid #d0d0d0;
+    margin: 0px;
+  }
+  .company-name {
+    font-size: 32px;
+  }
+  .ticker-symbol {
+    font-size: 16px;
+  }
+}
