@@ -16,3 +16,6 @@ python3 -m http.server
 
 ## Technologies Used
 Vanilla JS, CSS, JS
+
+## Hosted on
+https://magical-dango-bf26cb.netlify.app/
